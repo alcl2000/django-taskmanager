@@ -8,9 +8,9 @@
 </head>
 <body>
     <h1>edit a todo item</h1>    
-    <form method="POST"  >
+    <form method="POST">
         {% csrf_token %}
-            {{form}}
+            {{form.as_p}}
             <p>
             <button type="submit">Update Item</button>
             </p>
